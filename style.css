@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap");
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -179,6 +181,53 @@ body .subHead {
   line-height: 27px;
   letter-spacing: -0.11px;
   color: #19536C;
+}
+
+.client {
+  text-align: center;
+}
+.client .titreClient {
+  letter-spacing: 4px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #A7AAAD;
+  font-weight: bold;
+  padding: 64px 0;
+}
+.client .artClient .photoProfil {
+  border: 0px solid black;
+  border-radius: 50%;
+  width: 20%;
+}
+.client .artClient .exp {
+  font-family: Barlow, sans-serif;
+  letter-spacing: -0.13px;
+  font-size: 18px;
+  line-height: 32px;
+  color: #5B636D;
+  padding: 30px 0;
+}
+.client .artClient .name {
+  font-family: Fraunces, serif;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.13px;
+  color: #19536C;
+  padding-bottom: 10px;
+  font-weight: 900;
+}
+.client .artClient .function {
+  font-family: Fraunces, serif;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: -0.1px;
+  color: #A7AAAD;
+  padding-bottom: 50px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 body .titleSection {

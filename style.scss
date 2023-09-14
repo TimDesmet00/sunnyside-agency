@@ -1,4 +1,5 @@
 @import './vendor/normalize';
+@import 'fontstyle.scss';
 @import 'variable.scss';
 
 @import 'header.scss';
@@ -6,6 +7,8 @@
 @import 'standout.scss';
 @import 'graphic.scss';
 @import 'photography.scss';
+@import 'client.scss';
+@import 'gallery.scss';
 
 body{
     .titleSection{
