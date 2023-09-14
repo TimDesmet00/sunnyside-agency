@@ -4,10 +4,28 @@ html {
 
 body{
     .headPage{
-        background-image: url(./images/photos/image-header.jpg);
         width: 375px;
+        height: 538px;
+        background-image: url(./images/photos/image-header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+        .navBar{
+            display: inline;
+            text-align: center;
+            .navLien{
+                visibility: hidden;
+            }
+        }
+
+        .titleSection{
+            font-size: 70px;
+            color: $title-white;
+            margin-top: 70px;
+        }
     }
     .subHead{
-        width: 375px;
+        width: 100%;
     }
 };
