@@ -4,10 +4,14 @@
 @import 'header.scss';
 @import 'brand.scss';
 @import 'standout.scss';
+@import 'graphic.scss';
+@import 'photography.scss';
 
 body{
     .titleSection{
         font-size: 32px;
         text-align: center;
+        font-family: $styleTitle;
+        font-weight: bold;
     }
 }

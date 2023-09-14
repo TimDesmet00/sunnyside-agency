@@ -4,25 +4,35 @@ html {
 
 body{
     .headPage{
-        width: 375px;
+        width: 100%;
         height: 538px;
         background-image: url(./images/photos/image-header.jpg);
-        background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: center ;
+
+        .burgerBar{
+            font-size: 22px ;
+            color: $title-white;
+            font-family: $styleTitle;
+            display: flex;
+            justify-content: space-between;
+            padding: 28px;
+        }
         
         .navBar{
             display: inline;
             text-align: center;
-            .navLien{
-                visibility: hidden;
-            }
+            visibility: hidden;
         }
 
         .titleSection{
             font-size: 70px;
             color: $title-white;
-            margin-top: 70px;
+            font-family: $styleTitle;
+            margin-bottom: 10px;
+        }
+        .fleche{
+            text-align: center;
         }
     }
     .subHead{

@@ -1,5 +1,24 @@
 .standOut {
     border: 1px solid black;
-    margin: 15%;
+    margin: 10%;
     text-align: center;
+    .standTitle{
+        margin-bottom: 50px;
+        color: $title-color-bg-white;
+    }
+    .textSection{
+        font-size: 18px;
+        margin-bottom: 50px;
+        color: $text-color-bg-whith;
+        line-height: 30px;
+    }
+    .aSection{
+        border-bottom: 10px solid rgba(250, 212, 0, 0.4);
+        border-radius: 5px;
+        text-decoration: none;
+        font-family: $styleTitle;
+        font-weight: bold;
+        font-size: 20px;
+        color: $title-color-bg-white;
+    }
 }
