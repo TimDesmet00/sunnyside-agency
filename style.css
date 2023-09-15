@@ -80,18 +80,35 @@ body .headPage .titleSection {
 body .headPage .fleche {
   text-align: center;
 }
-body .subHead {
-  width: 100%;
-}
 
 @media only screen and (min-width: 1024px) {
-  .headPage .burgerBar img {
+  body .headPage .burgerBar img {
     display: none;
   }
-  .headPage .navBar {
+  body .headPage .navBar {
     display: block;
+    position: relative;
+    left: 400px;
+    top: -50px;
+  }
+  body .headPage .navBar .navLien {
+    margin: 15px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  body .headPage .navBar .contact {
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    background-color: #ffffff;
+    color: black;
+    padding: 15px 25px;
   }
 }
+.subHead {
+  width: 100%;
+  grid-area: subhead;
+}
+
 .brand {
   width: 100%;
   border: 0px solid black;
@@ -120,11 +137,18 @@ body .subHead {
   color: #24303E;
 }
 
+@media only screen and (min-width: 1024px) {
+  .brand {
+    grid-area: brand;
+  }
+}
 .subBrand {
-  width: 375px;
+  width: 100%;
+  grid-area: subbrand;
 }
 
 .standOut {
+  grid-area: standout;
   width: 100%;
   margin: 10% 0;
   text-align: center;
@@ -143,7 +167,7 @@ body .subHead {
   line-height: 30px;
 }
 .standOut .aSection {
-  border-bottom: 10px solid rgba(250, 212, 0, 0.4);
+  border-bottom: 10px solid rgba(254, 119, 102, 0.4);
   border-radius: 5px;
   text-decoration: none;
   font-family: Fraunces, serif;
@@ -153,6 +177,7 @@ body .subHead {
 }
 
 .graphic {
+  grid-area: graphic;
   width: 100%;
   height: 538px;
   background-image: url(./images/photos/image-graphic-design.jpg);
@@ -175,6 +200,7 @@ body .subHead {
 }
 
 .photo {
+  grid-area: photo;
   width: 100%;
   height: 538px;
   background-image: url(./images/photos/image-photography.jpg);
@@ -197,6 +223,7 @@ body .subHead {
 }
 
 .client {
+  grid-area: client;
   text-align: center;
   width: 100%;
 }
@@ -208,12 +235,12 @@ body .subHead {
   font-weight: bold;
   padding: 64px 0;
 }
-.client .artClient .photoProfil {
+.client .clients .artClient .photoProfil {
   border: 0px solid black;
   border-radius: 50%;
   width: 20%;
 }
-.client .artClient .exp {
+.client .clients .artClient .exp {
   font-family: Barlow, sans-serif;
   letter-spacing: -0.13px;
   font-size: 18px;
@@ -221,7 +248,7 @@ body .subHead {
   color: #5B636D;
   padding: 30px 0;
 }
-.client .artClient .name {
+.client .clients .artClient .name {
   font-family: Fraunces, serif;
   font-size: 18px;
   line-height: 22px;
@@ -230,7 +257,7 @@ body .subHead {
   padding-bottom: 10px;
   font-weight: 900;
 }
-.client .artClient .function {
+.client .clients .artClient .function {
   font-family: Fraunces, serif;
   font-size: 14px;
   line-height: 25px;
@@ -239,13 +266,34 @@ body .subHead {
   padding-bottom: 50px;
 }
 
+@media only screen and (min-width: 1024px) {
+  .client {
+    margin-bottom: 100px;
+  }
+  .client .titreClient {
+    margin-top: 100px;
+  }
+  .client .clients {
+    display: flex;
+  }
+  .client .clients .artClient {
+    margin: 35px;
+  }
+}
 .gallery {
+  grid-area: gallery;
   display: flex;
   flex-wrap: wrap;
 }
 
+@media only screen and (min-width: 1024px) {
+  .gallery {
+    flex-wrap: nowrap;
+  }
+}
 .footPage {
-  width: 375px;
+  grid-area: footer;
+  width: 100%;
   height: 350px;
   background-color: #90D4C6;
 }
@@ -281,10 +329,17 @@ body .subHead {
 }
 
 body .titleSection {
-  flex-direction: column;
   font-size: 32px;
-  text-align: center;
   font-family: Fraunces, serif;
   font-weight: bold;
-  width: 375px;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  body main {
+    display: grid;
+    grid-template-areas: "brand subhead" "subbrand standout" "graphic photo" "client client" "gallery gallery" "footer footer";
+  }
 }/*# sourceMappingURL=style.css.map */

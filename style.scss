@@ -3,7 +3,9 @@
 @import 'variable.scss';
 
 @import 'header.scss';
+@import 'subhead.scss';
 @import 'brand.scss';
+@import 'subbrand';
 @import 'standout.scss';
 @import 'graphic.scss';
 @import 'photography.scss';
@@ -13,12 +15,28 @@
 
 body{
     .titleSection{
-        flex-direction: column;
+        // flex-direction: column;
         font-size: 32px;
-        text-align: center;
+        // text-align: center;
         font-family: $styleTitle;
         font-weight: bold;
-        width: 375px;
+        width: 100%;
+        text-align: center;
+        margin: auto;
         
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    body{
+        main{
+            display: grid;
+            grid-template-areas:"brand subhead" 
+                                "subbrand standout"
+                                "graphic photo"
+                                "client client"
+                                "gallery gallery"
+                                "footer footer";
+        }
     }
 }

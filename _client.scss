@@ -1,4 +1,5 @@
 .client{
+    grid-area: client;
     text-align: center;
     width: 100%;
     .titreClient{
@@ -9,36 +10,57 @@
         font-weight: bold;
         padding: 64px 0 ;
     }
-    .artClient{
-        .photoProfil{
-            border: 0px solid black;
-            border-radius: 50%;
-            width: 20%;
+    .clients{
+        .artClient{
+            .photoProfil{
+                border: 0px solid black;
+                border-radius: 50%;
+                width: 20%;
+            }
+            .exp{
+                font-family: $styleText;
+                letter-spacing: -0.13px;
+                font-size: 18px;
+                line-height: 32px;
+                color: $colorExp;
+                padding: 30px 0;
+            }
+            .name{
+                font-family: $styleTitle;
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: -0.13px;
+                color: $colorName;
+                padding-bottom: 10px;
+                font-weight: 900;
+            }
+            .function{
+                font-family: $styleTitle ;
+                font-size: 14px;
+                line-height: 25px;
+                letter-spacing: -0.1px;
+                color: $colorFunction;
+                padding-bottom: 50px;
+            }
         }
-        .exp{
-            font-family: $styleText;
-            letter-spacing: -0.13px;
-            font-size: 18px;
-            line-height: 32px;
-            color: $colorExp;
-            padding: 30px 0;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .client{
+        margin-bottom: 100px;
+        .titreClient{
+            margin-top: 100px;
         }
-        .name{
-            font-family: $styleTitle;
-            font-size: 18px;
-            line-height: 22px;
-            letter-spacing: -0.13px;
-            color: $colorName;
-            padding-bottom: 10px;
-            font-weight: 900;
+        .clients{
+            display: flex;
+            
+            .artClient{
+                margin: 35px;
+                // padding: 25px;
+            }
+            
         }
-        .function{
-            font-family: $styleTitle ;
-            font-size: 14px;
-            line-height: 25px;
-            letter-spacing: -0.1px;
-            color: $colorFunction;
-            padding-bottom: 50px;
-        }
+        
     }
 }

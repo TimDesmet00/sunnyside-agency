@@ -39,24 +39,39 @@ body{
             text-align: center;
         }
     }
-    .subHead{
-        width: 100%;
-    }
+    
 }
 
 @media only screen and (min-width: 1024px) {
-    .headPage{
-        .burgerBar{
+    body{
+        .headPage{
             
-            img{
-                display: none;
+            .burgerBar{
+                // height: 800px;
+                img{
+                    display: none;
+                }
             }
-        }
 
-        .navBar{
-            display: block;
-        }
-  
-    }  
-
+            .navBar{
+                display: block;
+                position: relative;
+                left: 400px;
+                top: -50px;
+                .navLien{
+                    margin: 15px;
+                    text-decoration: none;
+                    color: $title-white;
+                }
+                .contact{
+                    border: 1px solid $title-white;
+                    border-radius: 25px;
+                    background-color: $title-white;
+                    color: black;
+                    padding: 15px 25px;
+                }
+            }
+    
+        }  
+    }
 }
