@@ -13,6 +13,7 @@
 
 body{
     .titleSection{
+        flex-direction: column;
         font-size: 32px;
         text-align: center;
         font-family: $styleTitle;

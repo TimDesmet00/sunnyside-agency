@@ -20,9 +20,13 @@ body{
         }
         
         .navBar{
-            display: inline;
+            
             text-align: center;
-            visibility: hidden;
+            display: none;
+            font-family: $styleText;
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: 0.13px;
         }
 
         .titleSection{
@@ -38,4 +42,21 @@ body{
     .subHead{
         width: 100%;
     }
-};
+}
+
+@media only screen and (min-width: 1024px) {
+    .headPage{
+        .burgerBar{
+            
+            img{
+                display: none;
+            }
+        }
+
+        .navBar{
+            display: block;
+        }
+  
+    }  
+
+}
