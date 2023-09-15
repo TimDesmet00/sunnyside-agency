@@ -86,8 +86,9 @@ body .subHead {
 }
 
 .brand {
+  width: 100%;
   border: 0px solid black;
-  margin: 10%;
+  margin: 10% 0 10% 0;
   text-align: center;
 }
 .brand .brandTitle {
@@ -96,6 +97,8 @@ body .subHead {
 }
 .brand .textSection {
   font-size: 18px;
+  width: 90%;
+  margin: auto;
   margin-bottom: 50px;
   color: #808397;
   line-height: 30px;
@@ -115,8 +118,8 @@ body .subHead {
 }
 
 .standOut {
-  border: 1px solid black;
-  margin: 10%;
+  width: 100%;
+  margin: 10% 0;
   text-align: center;
 }
 .standOut .standTitle {
@@ -125,6 +128,9 @@ body .subHead {
 }
 .standOut .textSection {
   font-size: 18px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 50px;
   margin-bottom: 50px;
   color: #808397;
   line-height: 30px;
@@ -145,13 +151,13 @@ body .subHead {
   background-image: url(./images/photos/image-graphic-design.jpg);
   background-size: cover;
   background-position: center;
+  text-align: center;
 }
 .graphic .titleSection {
   padding-top: 330px;
   color: #24554A;
 }
 .graphic .textSection {
-  border: 1px solid black;
   margin: 10%;
   line-height: 30px;
   font-family: Barlow, sans-serif;
@@ -167,13 +173,13 @@ body .subHead {
   background-image: url(./images/photos/image-photography.jpg);
   background-size: cover;
   background-position: center;
+  text-align: center;
 }
 .photo .titleSection {
   padding-top: 350px;
   color: #24554A;
 }
 .photo .textSection {
-  border: 1px solid black;
   margin: 10%;
   line-height: 30px;
   font-family: Barlow, sans-serif;
@@ -185,6 +191,7 @@ body .subHead {
 
 .client {
   text-align: center;
+  width: 100%;
 }
 .client .titreClient {
   letter-spacing: 4px;
@@ -236,11 +243,34 @@ body .subHead {
   background-color: #90D4C6;
 }
 .footPage .logoFoot {
-  color: #2C7566;
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  padding-top: 64px;
+  padding-bottom: 40px;
   height: 33px;
   width: 170px;
   margin: auto;
-  padding-top: 60px;
+}
+.footPage .lienFoot {
+  font-family: Barlow, sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.13px;
+  color: #2C7566;
+  display: flex;
+  justify-content: space-evenly;
+  color: #458D7E;
+  padding-bottom: 88px;
+  text-decoration: none;
+}
+.footPage .reseauSocial {
+  color: #2C7566;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 164px;
+  margin: auto;
 }
 
 body .titleSection {
@@ -248,4 +278,5 @@ body .titleSection {
   text-align: center;
   font-family: Fraunces, serif;
   font-weight: bold;
+  width: 375px;
 }/*# sourceMappingURL=style.css.map */

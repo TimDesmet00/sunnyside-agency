@@ -1,6 +1,6 @@
 .standOut {
-    border: 1px solid black;
-    margin: 10%;
+    width: 100%;
+    margin: 10% 0;
     text-align: center;
     .standTitle{
         margin-bottom: 50px;
@@ -8,6 +8,9 @@
     }
     .textSection{
         font-size: 18px;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 50px;
         margin-bottom: 50px;
         color: $text-color-bg-whith;
         line-height: 30px;
