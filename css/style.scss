@@ -1,4 +1,4 @@
-@import './vendor/normalize';
+@import '.././vendor/normalize';
 @import 'fontstyle.scss';
 @import 'variable.scss';
 
@@ -17,7 +17,6 @@ body{
     .titleSection{
         // flex-direction: column;
         font-size: 32px;
-        // text-align: center;
         font-family: $styleTitle;
         font-weight: bold;
         width: 100%;

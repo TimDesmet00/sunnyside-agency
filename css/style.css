@@ -51,7 +51,7 @@ html {
 body .headPage {
   width: 100%;
   height: 538px;
-  background-image: url(./images/photos/image-header.jpg);
+  background-image: url(.././images/photos/image-header.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -103,6 +103,12 @@ body .headPage .fleche {
     color: black;
     padding: 15px 25px;
   }
+  body .headPage .navBar .contact:hover {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+    transition: 1.2s;
+  }
 }
 .subHead {
   width: 100%;
@@ -115,11 +121,11 @@ body .headPage .fleche {
   margin: 10% 0 10% 0;
   text-align: center;
 }
-.brand .brandTitle {
+.brand .divBrand .brandTitle {
   margin-bottom: 50px;
   color: #24303E;
 }
-.brand .textSection {
+.brand .divBrand .textSection {
   font-size: 18px;
   width: 90%;
   margin: auto;
@@ -127,7 +133,7 @@ body .headPage .fleche {
   color: #808397;
   line-height: 30px;
 }
-.brand .aSection {
+.brand .divBrand .aSection {
   border-bottom: 10px solid rgba(250, 212, 0, 0.4);
   border-radius: 5px;
   text-decoration: none;
@@ -140,6 +146,7 @@ body .headPage .fleche {
 @media only screen and (min-width: 1024px) {
   .brand {
     grid-area: brand;
+    margin: auto 0;
   }
 }
 .subBrand {
@@ -176,11 +183,16 @@ body .headPage .fleche {
   color: #24303E;
 }
 
+@media only screen and (min-width: 1024px) {
+  .standOut {
+    margin: auto 0;
+  }
+}
 .graphic {
   grid-area: graphic;
   width: 100%;
   height: 538px;
-  background-image: url(./images/photos/image-graphic-design.jpg);
+  background-image: url(.././images/photos/image-graphic-design.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -203,7 +215,7 @@ body .headPage .fleche {
   grid-area: photo;
   width: 100%;
   height: 538px;
-  background-image: url(./images/photos/image-photography.jpg);
+  background-image: url(.././images/photos/image-photography.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -328,6 +340,14 @@ body .headPage .fleche {
   margin: auto;
 }
 
+@media only screen and (min-width: 1024px) {
+  .footPage .lienFoot li:hover {
+    color: #ffffff;
+  }
+  .footPage .reseauSocial img:hover {
+    color: #ffffff;
+  }
+}
 body .titleSection {
   font-size: 32px;
   font-family: Fraunces, serif;
